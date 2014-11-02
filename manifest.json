@@ -4,16 +4,18 @@
 	"name": "Share, Yo!",
 	"description": "Share any page with your buds on Yo with one click!",
 	"version": "1.0",
-	"options_page": "opening.html",
 
+	"options_page": 
+		"opening.html",
+		
 	"browser_action": {
 		"default_icon": "icon.png",
 		"default_popup": "main.html"
 	},
 
 	"background": {
-		"scripts": ["eventPage.js", "opening.js"],
-		"persistent": false
+		"page": "background.html",
+		"persistent": true
 	},
 
 	"permissions": ["tabs", "storage"]
