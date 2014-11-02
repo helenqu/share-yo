@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel = "stylesheet" href = "stylesheet.css">
+	</head>
+	<body>
+		<div><h2>SHARE, YO!</h2></div>
+		<div class = "input">
+			<form action = "eventPage.js" method = "get">
+			<input type = "text" name = "username" onclick = "this.value='';" onfocus = "this.select()" onblur = "this.value=!this.value?'USERNAME':this.value;" value = 'USERNAME' />
+			<br>
+			<input type = "text" name = "password" onclick = "this.value='';" onfocus = "this.select()" onblur = "this.value=!this.value?'PASSWORD':this.value;" value = 'PASSWORD' />
+			<input type = "submit" value = "GO">
+			</form>
+		</div>
+		<br>
+		<div class = "popupdiv">
+			<script src = "eventPage.js"></script>
+		</div>
+	</body>
+	</html>
