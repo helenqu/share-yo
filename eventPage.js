@@ -23,7 +23,7 @@ $(function() {
             $('#yoform').submit(function(event) {
                 event.preventDefault();
                 var username = $('#username').val();
-                var api_token =  '137f1ca55799404dd51da56246b62f5747e58437'//\\JSON.parse(localStorage.getItem('apiKey'));
+                var api_token = (localStorage.getItem('apiKey')); //'137f1ca55799404dd51da56246b62f5747e58437'
                 /*chrome.storage.sync.get(['apiKey'], function(data) {
                     var opts = {
                         api_token: data.apiKey,
@@ -34,7 +34,7 @@ $(function() {
                 var opts = {
                         api_token: api_token,
                         username: username,
-                        link: url//$(location).attr('href')
+                        link: url//$(location).attr('href')//url
                     };
                     $.post('http://api.justyo.co/yo/', opts, function(output) {
                         console.log(output);

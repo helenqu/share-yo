@@ -1,9 +1,10 @@
-$(document).ready(function() {
-  $('#introform').on('submit', function(event) {
+$(function() {
+  
+  $('#introform').submit(function(event) {
     event.preventDefault();
     /*var YOSERNAME = $('#username').val();
     var YOPIKEY = $('#apikey').val(); */
-    console.log(YOSERNAME);
+    console.log(localStorage.getItem('apiKey'));
     localStorage.setItem('userName',$('#userName').val());
     localStorage.setItem('apiKey',$('#apiKey').val());
     //localStorage.setItem('apiKey','HELLOWORLD');
@@ -17,4 +18,6 @@ $(document).ready(function() {
       $('#username').val(data.userName);
     }
   }); */
+});
+
 });
