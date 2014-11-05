@@ -15,6 +15,11 @@ $(function() {
                  }
                 }
 
+                //pulling the current url
+                chrome.tabs.getSelected(null,function(tab){
+                url=tab.url;
+                  });
+
                 //funciton that receives the form data, and activates upon submit.
             $('#yoform').submit(function(event) {
                 event.preventDefault();
